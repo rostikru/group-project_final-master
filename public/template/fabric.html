@@ -1,0 +1,25 @@
+<div ng-show="fabricStatus" id="fabricWrapper">
+      
+
+<div class="canvasBlock">
+       
+    <ul class="ulBlock">
+            <li class="items" ng-repeat="i in listofItems track by $index" ><a href="" click="alert()"><img src="img/Fabric/{{i}}.png" id="res{{i}}"></a></li>
+    </ul>
+    <canvas id="c" width="700" height="600"> </canvas>
+    <input type="button" id="b" value='import'> 
+    <input type="button" ng-click="email()" value="Send to your e-mail">
+</div>
+
+</div>
+<!--
+
+
+<div>
+    <h1>Send to e-mail:</h1>
+    <h3>E-mail <input type="text" ng-model="remindMail"></h3>
+    <h3><input type="button" ng-click="SendPDFToEmail()" value="Send"></h3>
+</div>
+
+
+</div>-->
